@@ -1,6 +1,9 @@
+import Image from "next/image"
+
+
 export const Card = () => {
     return <div className="card w-86 bg-base-100 shadow-xl mt-4">
-        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+        <figure><Image src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
         <div className="card-body">
             <h2 className="card-title">
             QS World University Rankings 2024
