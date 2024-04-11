@@ -19,7 +19,7 @@ export const Timeline = () => {
                     <div className="timeline-end md:text-end m-20 ">
 
                         <div className="card bg-base-100 shadow-xl">
-                            <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                            <figure ><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
                             <div className="card-body">
                                 <h2 className="card-title">Shoes!</h2>
                                 <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -98,7 +98,7 @@ export const Timeline = () => {
                         iPhone is a line of smartphones produced by Apple Inc. that use Apple's own iOS mobile operating system. The first-generation iPhone was announced by then-Apple CEO Steve Jobs on January 9, 2007. Since then, Apple has annually released new iPhone models and iOS updates. As of November 1, 2018, more than 2.2 billion iPhones had been sold. As of 2022, the iPhone accounts for 15.6% of global smartphone market share
                     </div>
                     <hr />
-                </li> */}
+                </li>
                 <li>
                     <hr />
                     <div className="timeline-middle">
@@ -109,7 +109,7 @@ export const Timeline = () => {
                         <div className="text-lg font-black">Apple Watch</div>
                         The Apple Watch is a line of smartwatches produced by Apple Inc. It incorporates fitness tracking, health-oriented capabilities, and wireless telecommunication, and integrates with iOS and other Apple products and services
                     </div>
-                </li> 
+                </li> */}
             </ul>
         </div>
     )

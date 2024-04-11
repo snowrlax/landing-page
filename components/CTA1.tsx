@@ -17,7 +17,7 @@ export const StudentFeed = () => {
 
                     </div>
                     <div className="card w-64 bg-base-100 shadow-xl rounded-none">
-                        <figure><Image src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                        <figure><Image src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"  width={12} height={12} /></figure>
                         {/* <div className="card-body">
                     <h2 className="card-title">Shoes!</h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
