@@ -3,6 +3,8 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { signIn, signOut, useSession } from "next-auth/react"
+import { redirect } from "next/navigation"
+
 
 
 
@@ -20,10 +22,18 @@ export const Navbar = () => {
                 }}>
                     Login
                 </Button>}
-                <Button variant="outline" >Search</Button>
-                {session.status === "authenticated" && <Button variant="outline" onClick={() => {
-                    signOut()
-                }}>Log Out</Button>}
+                {session.status === "authenticated" || <Button variant="outline" >Search</Button>}
+                {session.status === "authenticated" &&
+                    <>
+                        <Button variant="outline" onClick={() => {
+                            // redirect('/user')
+                        }}>Dashboard</Button>
+
+                        <Button variant="outline" onClick={() => {
+                            signOut()
+                        }}>Log Out</Button>
+                    </>
+                }
             </div>
             {/* {JSON.stringify(session.status)} */}
         </header>
