@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 
 export const CTA = () => {
@@ -5,7 +6,7 @@ export const CTA = () => {
         <section key="1" className="w-full py-12">
             <div className="container px-4 md:px-6 mx-auto">
                 <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-                    <img
+                    <Image
                         alt="Hero"
                         className="mx-auto bg-slate-200 aspect-video overflow-hidden rounded-xl object-bottom sm:w-full lg:order-last lg:aspect-square"
                         height="550"

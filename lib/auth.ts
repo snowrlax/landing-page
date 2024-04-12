@@ -5,8 +5,8 @@ export const NEXT_AUTH = {
         CredentialsProvider({
             name: "Email",
             credentials: {
-                username: { label: 'email', type: 'text', placeholder: 'Email' },
-                password: { label: 'password', type: 'text', placeholder: 'Password' },
+                username: { label: "email", type: "text", placeholder: "Email" },
+                password: { label: "password", type: "text", placeholder: "Password" },
             },
             async authorize(credentials, req) {
                 const username = credentials?.username
@@ -17,9 +17,9 @@ export const NEXT_AUTH = {
                     return null
                 }
                 return {
-                    id: '1',
-                    name: 'Test User',
-                    email: 'test@gmail.com'
+                    id: "1",
+                    name: "Test user",
+                    email: "ex@gmail.com"
                 }
             },
         })

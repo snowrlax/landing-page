@@ -1,6 +1,7 @@
 
 import { CarouselItem, CarouselContent, CarouselPrevious, CarouselNext, Carousel } from "@/components/ui/carousel"
 import { CardContent, Card } from "@/components/ui/card"
+import Image from "next/image"
 
 
 export const Testemonials = () => {
@@ -23,7 +24,7 @@ export const Testemonials = () => {
                                 <div className="p-2">
                                     <Card>
                                         <CardContent className="flex items-center gap-4 p-6">
-                                            <img
+                                            <Image
                                                 alt="Image"
                                                 className="rounded-full"
                                                 height="80"

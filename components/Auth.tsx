@@ -86,7 +86,7 @@ export const LoginComponent = () => {
                             </Button>
                         </div>
                         <div className="mt-4 text-center text-sm">
-                            Don't have an account?
+                            Dont have an account?
                             <Link className="underline" href="/auth/signup">
                                 Signup
                             </Link>
