@@ -1,4 +1,6 @@
 import CredentialsProvider from "next-auth/providers/credentials"
+import GoogleProvider from "next-auth/providers/google";
+
 
 export const NEXT_AUTH = {
     providers: [
@@ -19,10 +21,14 @@ export const NEXT_AUTH = {
                 return {
                     id: "1",
                     name: "Test user",
-                    email: "ex@gmail.com"
+                    email: "pranav@gmail.com"
                 }
             },
-        })
+        }),
+        GoogleProvider({
+            clientId: process.env.GOOGLE_CLIENT_ID || "",
+            clientSecret: process.env.GOOGLE_CLIENT_SECRET || ""
+          })
     ],
     secret: process.env.NEXTAUTH_SECRET,
     callbacks: {
@@ -34,11 +40,11 @@ export const NEXT_AUTH = {
         // },
 
         session: ({ session, token, user }: any) => {
-            console.log(session)
+            // console.log(session)
             if (session && session.user) {
                 session.user.id = token.sub
             }
-            console.log(session)
+            // console.log(session)
 
             return session
         }

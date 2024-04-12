@@ -15,17 +15,17 @@ export const Navbar = () => {
                 <span className="text-xl font-bold">Name</span>
             </Link>
             <div className="flex gap-4">
-                <Button className="flex items-center" onClick={() => {
+                {session.status === "authenticated" || <Button className="flex items-center" onClick={() => {
                     signIn()
                 }}>
                     Login
-                </Button>
+                </Button>}
                 <Button variant="outline" >Search</Button>
-                <Button variant="outline" onClick={() => {
+                {session.status === "authenticated" && <Button variant="outline" onClick={() => {
                     signOut()
-                }}>Log Out</Button>
+                }}>Log Out</Button>}
             </div>
-            {JSON.stringify(session)}
+            {/* {JSON.stringify(session.status)} */}
         </header>
     )
 }
