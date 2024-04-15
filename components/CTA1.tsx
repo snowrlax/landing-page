@@ -9,9 +9,9 @@ export const CTA = () => {
                     <Image
                         alt="Hero"
                         className="mx-auto bg-slate-200 aspect-video overflow-hidden rounded-xl object-bottom sm:w-full lg:order-last lg:aspect-square"
-                        height="550"
+                        height={"550"}
                         src="/placeholder.svg"
-                        width="550"
+                        width={"550"}
                     />
                     <div className="flex flex-col justify-center space-y-4">
                         <div className="space-y-2">

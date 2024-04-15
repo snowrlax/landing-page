@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { signIn } from "next-auth/react"
 import { useState } from "react"
-import { useRouter } from "next/navigation"
+import { redirect, useRouter } from "next/navigation"
 
 
 export const SignupComponent = () => {
@@ -56,13 +56,13 @@ export const SignupComponent = () => {
                             </Button>
                             <Button className="w-full" variant="outline" onClick={async () => {
                                 await signIn("google")
-                                router.push('/user')
+                                redirect('/user')
                             }}>
                                 Sign up with Google
                             </Button>
                             <Button className="w-full" variant="outline" onClick={async () => {
                                 await signIn("github")
-                                router.push('/user')
+                                redirect('/user')
                             }}>
                                 Sign up with GitHub
                             </Button>
